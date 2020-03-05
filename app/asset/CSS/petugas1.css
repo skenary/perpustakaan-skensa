@@ -1,0 +1,306 @@
+ /*css untuk homepage*/
+        * { padding: 0;
+            margin: 0;
+        }
+        
+        .img{
+          background-image: url('../img/gambar1.jpg');
+          height: 760px;
+        }
+        .text {
+        padding-top: 20%; 
+        }
+        .text h1{
+            font-size: 50px;
+            color: white;
+        }
+        .text p{
+          font-size: 20px;
+          color: white;
+        }
+
+          /*css untuk content add book*/
+        .apakek{
+          margin-left: 50px;
+        }
+        .box1{
+          width: 60%;
+          height: 508px;
+          border-radius: 30px;
+          background-color: grey;
+
+        }
+        .box1 h1{
+          margin-top: 100px;
+          padding: 35px;
+          font-size: 40px;
+          color: white;
+        }
+        .box2{
+          padding: 20px 70px 20px 20px;
+          border-right: 5px solid black;
+          margin: 0px;
+          width: 250px;
+          height: 200px;
+        }
+
+        .flex{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @font-face{
+          font-family:hoeflertext;
+          scr : url(../FONT/hoeflertext.ttf);
+         }
+        .box2 p{
+          font-family: hoeflertext;
+          font-size: 25px;
+        }     
+        .form{
+          padding-top: 25px;
+          width: 80%;
+          position: relative;
+          height: 35px;
+          overflow: hidden;
+        }
+
+        .form input{
+          background-color: grey;
+          width: 150%;
+          height: 100%;
+          color: blue;
+          padding-top: 5px;
+          border: none;
+          outline: none;
+        }
+
+        .form label{
+          position: absolute;
+          bottom: 0px;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          border-bottom: 1px solid black;
+        }
+
+        .form label::after{
+          content: "";
+          position: absolute;
+          left: 0px;
+          bottom: -1px;
+          height: 100%;
+          width: 100%;
+          border-bottom: 3px solid red;
+          transform: translate(-100%);
+          transition: transform 0.3s ease;
+        }
+
+        .content-name{
+          position: absolute;
+          bottom: 5px;
+          left: 0px;
+          transition: all 0.3s ease;
+        }
+
+        .form input:focus + .label-name .content-name, 
+        .form input:valid + .label-name .content-name{
+          transform: translateY(-90%);
+          font-size: 14px;
+          color: red;
+        }
+
+        .form input:focus +.label-name::after, 
+        .form input:valid + .label-name:after{
+          transform: translateX(0%);
+        }
+
+
+
+
+
+
+        .form2{
+          padding-top: 20px;
+          width: 80%;
+          position: relative;
+          height: 35px;
+          overflow: hidden;
+        }
+
+        .form2 input{
+          background-color: grey;
+          width: 100%;
+          height: 100%;
+          color: red;
+          padding-top: 5px;
+          border: none;
+          outline: none;
+        }
+
+        .form2 label{
+          position: absolute;
+          bottom: 0px;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          border-bottom: 1px solid black;
+        }
+
+        .form2 label::after{
+          content: "";
+          position: absolute;
+          left: 0px;
+          bottom: -1px;
+          height: 100%;
+          width: 100%;
+          border-bottom: 3px solid blue;
+          transform: translate(-100%);
+          transition: transform 0.3s ease;
+        }
+
+        .content-name2{
+          position: absolute;
+          bottom: 5px;
+          left: 0px;
+          transition: all 0.3s ease;
+        }
+
+        .form2 input:focus + .label-name2 .content-name2, 
+        .form2 input:valid + .label-name2 .content-name2{
+          transform: translateY(-90%);
+          font-size: 14px;
+          color: blue;
+        }
+
+        .form2 input:focus +.label-name2::after, 
+        .form2 input:valid + .label-name2:after{
+          transform: translateX(0%);
+        }
+
+
+        .form3{
+          padding-top: 20px;
+          width: 80%;
+          position: relative;
+          height: 35px;
+          overflow: hidden;
+        }
+
+        .form3 input{
+          background-color: grey;
+          width: 100%;
+          height: 100%;
+          color: blue;
+          padding-top: 5px;
+          border: none;
+          outline: none;
+        }
+
+        .form3 label{
+          position: absolute;
+          bottom: 0px;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          border-bottom: 1px solid black;
+        }
+
+        .form3 label::after{
+          content: "";
+          position: absolute;
+          left: 0px;
+          bottom: -1px;
+          height: 100%;
+          width: 100%;
+          border-bottom: 3px solid blue;
+          transform: translate(-100%);
+          transition: transform 0.3s ease;
+        }
+
+        .content-name3{
+          position: absolute;
+          bottom: 5px;
+          left: 0px;
+          transition: all 0.3s ease;
+        }
+
+        .form3 input:focus + .label-name3 .content-name3, 
+        .form3 input:valid + .label-name3 .content-name3{
+          transform: translateY(-90%);
+          font-size: 14px;
+          color: red;
+        }
+
+        .form3 input:focus +.label-name3::after, 
+        .form3 input:valid + .label-name3:after{
+          transform: translateX(0%);
+        }
+        input[type=file]{
+          width:90px;
+          color:transparent;
+        }
+        #imagePreview img{
+          height: 200px;
+        }
+
+        /* css untuk header*/
+        .header{
+          font-family: myFirstFont;
+          font-size: 25px;
+          width: 100%;
+          height: 60px;
+          background: grey;
+        }
+        header{
+          margin-top: 0%;
+          margin-left: 50px;
+          line-height: 60px;
+        }
+        @font-face{
+            font-family: myFirstFont;
+            src : url(../FONT/Gloss_And_Bloom.ttf);
+            
+        }
+        @font-face{
+          font-family:hoeflertext;
+            scr : url(../FONT/hoeflertext.ttf);
+        }
+        .ul-li{
+          margin-top:-47px;
+          margin-right:100px;
+          font-family: hoeflertext;
+          display: inline-block;
+          float: right;
+        }
+        .ul-li a{
+          padding:5px;
+          text-decoration: none;
+          font-size: 15px;
+          margin: 10px;
+          border:1px solid black;
+        }
+        .nowtamp{
+          background:black;
+        }
+        .hidden{
+          display: none;
+        }
+
+        .tes{
+          text-align: center;
+          margin-top: 50px;
+          margin-left: 150px;
+          color: white;
+          background-color: black;
+          height: 30px;
+          border: none;
+          width: 70px;
+        }
+
+        .tes:hover{
+          background-color: #fafa;
+        }
