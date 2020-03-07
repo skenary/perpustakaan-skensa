@@ -2,8 +2,30 @@
 <html>
 <head>
   <title>Skenary</title>
-  <link rel="stylesheet" type="text/css" href="../../../asset/CSS/petugas1.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/CSS/petugas1.css">
+  <script src="../../../assets/js/petugas1.js"></script>
 </head>
+
+	<?php 
+
+		if(isset($_GET['pesan'])){
+			if($_GET['pesan']=="error"){
+  			$pesan = "Anda tidak memiliki hak akses !";
+  			echo "<script type='text/javascript'>alert('$pesan');</script>";
+			}
+		}
+
+		session_start();
+	 
+		if($_SESSION['level']==""){
+			header("location:../index.php?pesan=error");
+		} else if($_SESSION['level']=="pegawai2"){
+			header("location:../petugas 2/index.php?pesan=error");
+		} else if($_SESSION['level']=="pegawai3"){
+			header("location:../petugas 3/index.php?pesan=error");
+		}
+ 
+	?>
 
 <body>
   <center>
@@ -18,154 +40,99 @@
   <div class="header">
     <header id="skenary">Skenary</header>
       <div class="ul-li">
-            <a id="addb" class="nowtamp" onclick="balik()"  href="#skenary">Add Book</a>
-            <a id="addv" onclick="pindah()" href="#skenary">View Book</a>
+        <a id="addb" class="nowtamp" onclick="balik()"  href="#skenary">Add Book</a>
+        <a id="addv" onclick="pindah()" href="#skenary">View Book</a>
       </div>
   </div>
-
-  <div id="semuanya" class="semuanya">
-    <div class="add_book">
+<div id="semuanya" class="semuanya">
+  <div class="add_book">
+    <form action="proses_tambah_buku.php" method="post" enctype="multipart/form-data">
       <center>
         <div class="box1">
-
+          <center>
             <h1>Book Description</h1>
-
+          </center>
           <div class="flex">
             <div class="box2">
               <p>Fill The Box</p>
-              
-              <form>
               <div class="form" onclick="myFunction()">
-                <input type="text" name="name" required="" autocomplete="off">
+                <input type="text" name="nama_buku" required="" autocomplete="off">
                 <label for="name" class="label-name">
                     <span class="content-name">Book Name</span>
                 </label>
-              </div>
-             
-
+              </div>          
               <div class="form2">
-                <input type="text" name="name" required="" autocomplete="off">
+                <input type="text" name="tipe_buku" required="" autocomplete="off">
                 <label for="name" class="label-name2">
                     <span class="content-name2">Book Type</span>
                 </label>
               </div>
-
               <div class="form3">
-                <input type="text" name="name" required="" autocomplete="off">
+                <input type="text" name="kode_buku" required="" autocomplete="off">
                 <label for="name" class="label-name3">
                     <span class="content-name3">Book Code</span>
                 </label>
               </div>
-              </form>
-              
-                <input class="tes" type="submit" name="submit">
-              
-
+                <input type="submit" class="tes" name="submit">
             </div>
-
-              <div class="apakek">
-                <input type="file" id="file" disabled="disabled" onchange="return fileValidation()"/>
-              </div>
-
+            <div class="apakek">
+              <input type="file" id="file" name="gambar" disabled="disabled" onchange="return fileValidation()">
+            </div>
             <div id="imagePreview"></div>
           </div>
         </div>
       </center>
-    </div>
+    </form>
   </div>
-
-
+</div>
 <br><br><br><br><br>
 </body>
 </html>
 
-<script>
-    function myFunction() {
-  document.getElementById("file").disabled = false;
-}
-</script>
-<script>
-function fileValidation(){
-    var fileInput = document.getElementById('file');
-    var filePath = fileInput.value;
-    var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
-    if(!allowedExtensions.exec(filePath)){
-        alert('Please upload file having extensions .jpeg/.jpg/.png/.gif only.');
-        fileInput.value = '';
-        return false;
-    }else{
-        //Image preview
-        if (fileInput.files && fileInput.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                document.getElementById('imagePreview').innerHTML = '<img src="'+e.target.result+'"/>';
-            };
-            reader.readAsDataURL(fileInput.files[0]);
-        }
-    }
-}
 
 
-function pindah() {
-  var view_book = document.getElementById("view_book").innerHTML;
-  document.getElementById("addb").className = "";
-  document.getElementById("addv").className = "nowtamp";
-  document.getElementById("semuanya").innerHTML = view_book;
-}
-function balik() {
-  var add_book = document.getElementById("add_book").innerHTML;
-  document.getElementById("addb").className = "nowtamp";
-  document.getElementById("addv").className = "";
-  document.getElementById("semuanya").innerHTML = add_book;
-
-}
-</script>
-
-
- <div id="view_book" class="hidden">
-    <p>ini untuk view ya!!!</p>
-    </div>
+<div id="view_book" class="hidden">
+  <p>ini untuk view ya!!!</p>
+</div>
 
 
 
 <div id="add_book" class="hidden">
-  <center>
-    <div class="box1">
-      <center>
-        <h1>Book Description</h1>
-      </center>
-
-      <div class="flex">
-        <div class="box2">
-          <p>Fill The Box</p>
-          <div class="form" onclick="myFunction()">
-            <input type="text" name="name" required="" autocomplete="off">
-            <label for="name" class="label-name">
-                <span class="content-name">Book Name</span>
-            </label>
+  <form action="proses_tambah_buku.php" method="post" enctype="multipart/form-data">
+    <center>
+      <div class="box1">
+        <center>
+          <h1>Book Description</h1>
+        </center>
+        <div class="flex">
+          <div class="box2">
+            <p>Fill The Box</p>
+            <div class="form" onclick="myFunction()">
+              <input type="text" name="nama_buku" required="" autocomplete="off">
+              <label for="name" class="label-name">
+                  <span class="content-name">Book Name</span>
+              </label>
+            </div>          
+            <div class="form2">
+              <input type="text" name="tipe_buku" required="" autocomplete="off">
+              <label for="name" class="label-name2">
+                  <span class="content-name2">Book Type</span>
+              </label>
+            </div>
+            <div class="form3">
+              <input type="text" name="kode_buku" required="" autocomplete="off">
+              <label for="name" class="label-name3">
+                  <span class="content-name3">Book Code</span>
+              </label>
+            </div>
+              <input type="submit" class="tes" name="submit">
           </div>
-         
-
-          <div class="form2">
-            <input type="text" name="name" required="" autocomplete="off">
-            <label for="name" class="label-name2">
-                <span class="content-name2">Book Type</span>
-            </label>
+          <div class="apakek">
+            <input type="file" id="file" name="gambar" disabled="disabled" onchange="return fileValidation()">
           </div>
-          <div class="form3">
-            <input type="text" name="name" required="" autocomplete="off">
-            <label for="name" class="label-name3">
-                <span class="content-name3">Book Code</span>
-            </label>
-          </div>
-
-          <input class="tes" type="submit" name="submit">
-
+          <div id="imagePreview"></div>
         </div>
-        <div class="apakek">
-          <input type="file" id="file" disabled="disabled" onchange="return fileValidation()"/>
-        </div>
-        <div id="imagePreview"></div>
       </div>
-  </center>
+    </center>
+  </form>
 </div>
