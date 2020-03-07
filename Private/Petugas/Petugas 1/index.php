@@ -22,7 +22,7 @@
             <a id="addv" onclick="pindah()" href="#skenary">View Book</a>
       </div>
   </div>
-<form>
+
   <div id="semuanya" class="semuanya">
     <div class="add_book">
       <center>
@@ -33,6 +33,8 @@
           <div class="flex">
             <div class="box2">
               <p>Fill The Box</p>
+              
+              <form>
               <div class="form" onclick="myFunction()">
                 <input type="text" name="name" required="" autocomplete="off">
                 <label for="name" class="label-name">
@@ -54,7 +56,7 @@
                     <span class="content-name3">Book Code</span>
                 </label>
               </div>
-              
+              </form>
               
                 <input class="tes" type="submit" name="submit">
               
@@ -70,12 +72,13 @@
         </div>
       </center>
     </div>
-   
   </div>
-</form>
+
+
 <br><br><br><br><br>
 </body>
 </html>
+
 <script>
     function myFunction() {
   document.getElementById("file").disabled = false;
@@ -155,6 +158,8 @@ function balik() {
                 <span class="content-name3">Book Code</span>
             </label>
           </div>
+
+          <input class="tes" type="submit" name="submit">
 
         </div>
         <div class="apakek">
