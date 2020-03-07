@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Skenary</title>
-  <link rel="stylesheet" type="text/css" href="../../asset/CSS/petugas1.css">
+  <link rel="stylesheet" type="text/css" href="../../../asset/CSS/petugas1.css">
 </head>
 
 <body>
@@ -27,9 +27,8 @@
     <div class="add_book">
       <center>
         <div class="box1">
-          <center>
+
             <h1>Book Description</h1>
-          </center>
 
           <div class="flex">
             <div class="box2">
@@ -61,9 +60,10 @@
               
 
             </div>
-            <div class="apakek">
-              <input type="file" id="file" disabled="disabled" onchange="return fileValidation()"/>
-            </div>
+
+              <div class="apakek">
+                <input type="file" id="file" disabled="disabled" onchange="return fileValidation()"/>
+              </div>
 
             <div id="imagePreview"></div>
           </div>
