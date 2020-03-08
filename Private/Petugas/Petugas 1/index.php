@@ -19,9 +19,9 @@
 	 
 		if($_SESSION['level']==""){
 			header("location:../index.php?pesan=error");
-		} else if($_SESSION['level']=="pegawai2"){
+		} else if($_SESSION['level']=="petugas2"){
 			header("location:../petugas 2/index.php?pesan=error");
-		} else if($_SESSION['level']=="pegawai3"){
+		} else if($_SESSION['level']=="petugas3"){
 			header("location:../petugas 3/index.php?pesan=error");
 		}
  
