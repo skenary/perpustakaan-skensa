@@ -1,6 +1,6 @@
 <?php
 
-    include "../../config/koneksi.php";
+    include "../../../config/koneksi.php";
 
     $nama_buku = $_POST['nama_buku'];
     $tipe_buku = $_POST['tipe_buku'];

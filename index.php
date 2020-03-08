@@ -27,7 +27,7 @@
  
 	<center>
     <div class="img">
-    	<form action="private/config/cek_login.php" method="post">
+    	<form action="config/cek_login.php" method="post">
 	    <div class="box1">
 	      <center>
 	        <h1>Login</h1>

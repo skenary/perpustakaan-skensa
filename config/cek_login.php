@@ -4,7 +4,6 @@
 	 
 	include 'koneksi.php';
 	
-	$nama = $_POST['nama'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	 
@@ -19,22 +18,22 @@
 	 
 			$_SESSION['username'] = $username;
 			$_SESSION['level'] = "admin";
-			header("location:../admin/halaman_admin.php");
+			header("location:../private/admin/index.php");
 	 
 		}else if($data['level']=="petugas1"){
 			$_SESSION['username'] = $username;
 			$_SESSION['level'] = "petugas1";
-			header("location:../petugas/petugas 1/index.php");
+			header("location:../private/petugas/petugas 1/index.php");
 	 
 		}else if($data['level']=="petugas2"){
 			$_SESSION['username'] = $username;
 			$_SESSION['level'] = "petugas2";
-			header("location:../petugas/petugas 2/index.php");
+			header("location:../private/petugas/petugas 2/index.php");
 
 		}else if($data['level']=="petugas3"){
 			$_SESSION['username'] = $username;
 			$_SESSION['level'] = "petugas3";
-			header("location:../petugas/petugas 3/index.php");
+			header("location:../private/petugas/petugas 3/index.php");
 	 
 		}else{
 			header("location:index.php?pesan=gagal");

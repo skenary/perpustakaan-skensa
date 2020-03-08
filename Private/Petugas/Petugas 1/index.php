@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Skenary</title>
-  <link rel="stylesheet" type="text/css" href="../../../assets/CSS/petugas1.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/petugas1.css">
   <script src="../../../assets/js/petugas1.js"></script>
 </head>
 
