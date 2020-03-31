@@ -7,7 +7,7 @@
     $kode_buku = $_POST['kode_buku'];
     $gambar = $_FILES['gambar']['name'];
 
-	$target_dir = "../../../assets/img/";
+	$target_dir = "../../../asset/img/";
 	$target_file = $target_dir . basename($_FILES["gambar"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

@@ -1,6 +1,4 @@
-function myFunction() {
-  document.getElementById("file").disabled = false;
-}
+
 function fileValidation(){
     var fileInput = document.getElementById('file');
     var filePath = fileInput.value;
@@ -31,4 +29,26 @@ function balik() {
   document.getElementById("addb").className = "nowtamp";
   document.getElementById("addv").className = "";
   document.getElementById("semuanya").innerHTML = add_book;
+}
+function input(){
+$cek = 0;
+if(isset($_POST['nama_buku'])){
+  if ($_POST['nama_buku'] !== "" ) {
+    $cek=$cek + 1;
+  }
+}
+if(isset($_POST['tipe_buku'])){
+  if ($_POST['tipe_buku'] !== "" ) {
+    $cek=$cek + 1;
+  }
+}
+if(isset($_POST['kode_buku'])){
+  if ($_POST['kode_buku'] !== "" ) {
+    $cek=$cek + 1;
+  }
+} 
+if ($cek == 3) {
+  document.getElementById('file').disabled = false;
+}
+
 }

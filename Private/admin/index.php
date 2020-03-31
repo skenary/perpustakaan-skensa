@@ -33,7 +33,7 @@
 	<br><br>
 	<a href="daftar_buku.php">Buku</a>
 	<br><br>
-	<a href="logout.php">LOGOUT</a>
+	<a href="../logout.php">LOGOUT</a>
 
 </body>
 </html>

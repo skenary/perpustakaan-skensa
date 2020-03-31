@@ -28,6 +28,6 @@
 	<h1>Halaman Pegawai 3</h1>
  
 	<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-	<a href="logout.php">LOGOUT</a>
+	<a href="../../logout.php">LOGOUT</a>
 </body>
 </html>

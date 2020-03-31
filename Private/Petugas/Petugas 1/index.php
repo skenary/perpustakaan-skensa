@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>Skenary</title>
-  <link rel="stylesheet" type="text/css" href="../../../assets/css/petugas1.css">
-  <script src="../../../assets/js/petugas1.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../../asset/css/petugas1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="../../../asset/js/petugas1.js"></script>
 </head>
 
 	<?php 
@@ -30,8 +31,10 @@
 <body>
   <center>
     <div class="img">
+      <div class="fa"><a href="../../logout.php"><i class="fas fa-sign-out-alt fa-3x"></i></a></div>
       <div class="text">
-        <h1>Hai Petugas X!</h1>
+        <img src=" ../../../asset/img/logo.png">
+        <h1>Hai Petugas <?php echo  $_SESSION['datanama'] ?>!</h1>
         <br>
         <p>Welcome Back To Skenary</p>
       </div>
@@ -55,7 +58,7 @@
           <div class="flex">
             <div class="box2">
               <p>Fill The Box</p>
-              <div class="form" onclick="myFunction()">
+              <div class="form">
                 <input type="text" name="nama_buku" required="" autocomplete="off">
                 <label for="name" class="label-name">
                     <span class="content-name">Book Name</span>
@@ -73,13 +76,15 @@
                     <span class="content-name3">Book Code</span>
                 </label>
               </div>
-                <input type="submit" class="tes" name="submit">
+                
             </div>
+
             <div class="apakek">
-              <input type="file" id="file" name="gambar" disabled="disabled" onchange="return fileValidation()">
+              <input type="file" id="file" name="gambar" onchange="return fileValidation()">
             </div>
             <div id="imagePreview"></div>
           </div>
+          <input type="submit" class="tes" name="submit">
         </div>
       </center>
     </form>
@@ -88,13 +93,29 @@
 <br><br><br><br><br>
 </body>
 </html>
+<?php
+  include '../../../config/koneksi.php'; 
+  $q = "SELECT * FROM tb_buku";
+  $v = mysqli_query($conn,$q);
 
-
-
+ ?>
 <div id="view_book" class="hidden">
-  <p>ini untuk view ya!!!</p>
-</div>
+  <div class="builder">
+    <?php while ($d = mysqli_fetch_array($v)) {
+     ?>
+    <div class="kotak">
+      <img src="../../../asset/img/<?php echo $d['gambar'] ?>">
+      <div class="keterangan">
+        <center>
+        <p><?php echo $d['nama_buku']; ?></p>
+        <p><?php echo $d['tipe_buku']; ?></p>
+        <p><?php echo $d['kode_buku']; ?></p>
+        </center>
+      </div>
+    </div>
 
+  <?php } ?>
+  </div>
 
 
 <div id="add_book" class="hidden">
@@ -125,13 +146,13 @@
                   <span class="content-name3">Book Code</span>
               </label>
             </div>
-              <input type="submit" class="tes" name="submit">
           </div>
           <div class="apakek">
             <input type="file" id="file" name="gambar" disabled="disabled" onchange="return fileValidation()">
           </div>
           <div id="imagePreview"></div>
         </div>
+        <input type="submit" class="tes" name="submit">
       </div>
     </center>
   </form>
