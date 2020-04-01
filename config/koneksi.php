@@ -4,7 +4,6 @@
 
 	if(!$conn){
 		echo "Koneksi Gagal!";
-		die();
 	}
 
 ?>

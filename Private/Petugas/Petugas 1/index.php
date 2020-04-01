@@ -94,7 +94,7 @@
 </body>
 </html>
 <?php
-  include '../../../config/koneksi.php'; 
+  include ('../../../config/koneksi.php'); 
   $q = "SELECT * FROM tb_buku";
   $v = mysqli_query($conn,$q);
 

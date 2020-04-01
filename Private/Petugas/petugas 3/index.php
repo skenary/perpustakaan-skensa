@@ -53,7 +53,7 @@
     }
 
     .head{
-        background-image: url(bg.jpg);
+        background-image: url('bg.jpg');
         height:100vh;
         background-size:cover;
         background-position:center;
