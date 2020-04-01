@@ -1,5 +1,5 @@
 <?php
-    include_once('../config/koneksi.php');
+    include ('../../../config/koneksi.php'); 
 ?>
 
 <!DOCTYPE html>
