@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Halaman Admin</title>
+	<link rel="stylesheet" type="text/css" href="../../asset/css/admin.css">
 </head>
 <body>
 	<?php 
@@ -27,13 +28,19 @@
  
 	?>
 	
-	<h1>Halaman Admin</h1>
- 
-	<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+	<div class="head">
+		<h1>Skenary</h1>
+		<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+	</div>
 	<br><br>
-	<a href="daftar_buku.php">Buku</a>
-	<br><br>
-	<a href="../logout.php">LOGOUT</a>
+	<div class="body">
+		<a href="daftar_buku.php">Buku</a>
+		<br><br>
+		<a href="../logout.php">LOGOUT</a>
+	</div>
+	<div class="footer">
+
+	</div>
 
 </body>
 </html>
