@@ -31,6 +31,14 @@
 	<div class="head">
 		<h1>Skenary</h1>
 		<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+		<div class="navbar">
+			<ul>
+				<li><a href="#">Laporan</a></li>
+				<li><a href="#">Kegiatan</a></li>
+				<li><a href="#">Petugas</a></li>
+				<li><a href="#">Home</a></li>
+			</ul>
+		</div>
 	</div>
 	<br><br>
 	<div class="body">

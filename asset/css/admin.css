@@ -7,3 +7,15 @@
     border:2px solid black;
     padding:10px;
 }
+
+.navbar ul li{
+    float:right;
+    list-style:none;
+    margin-right:20px;
+    margin-top:-15px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:black;
+}
