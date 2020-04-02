@@ -34,8 +34,14 @@
 		<div class="navbar">
 			<ul>
 				<li><a href="#">Laporan</a></li>
-				<li><a href="#">Kegiatan</a></li>
-				<li><a href="#">Petugas</a></li>
+				<li><a href="#">Kegiatan</a></li>	
+				<li><a href="#dropdown-child" class="mainmenubtn">Petugas</a>
+					<ul>
+						<li><a href="../petugas/petugas1">Petugas 1</a></li>
+						<li><a href="../petugas/petugas1">Petugas 2</a></li>
+						<li><a href="../petugas/petugas1">Petugas 3</a></li>
+					</ul>	
+				</li>
 				<li><a href="#">Home</a></li>
 			</ul>
 		</div>
