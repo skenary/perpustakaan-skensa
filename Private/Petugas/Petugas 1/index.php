@@ -80,7 +80,7 @@
             </div>
 
             <div class="apakek">
-              <input type="file" id="file" name="gambar" onchange="return fileValidation()">
+              <input type="file" id="file" name="gambar" onchange="return fileValidation()" required="">
             </div>
             <div id="imagePreview"></div>
           </div>
