@@ -41,9 +41,9 @@
     position:absolute;
     background-color: black;
     margin-top:10px;
-    left:950px; 
-    height:120px;
-	width:150px;
+    left:720px; 
+    height:150px;
+	width:220px;
 }
  
 .navbar ul ul li a {
@@ -59,4 +59,16 @@
  
 .navbar ul ul li a:hover {
 	color:blue;
+}
+
+.body{
+    height:350px;
+    border: 2px solid black;
+}
+.footer{
+    height:50px;
+    border:2px solid black;
+}
+.footer h5{
+    text-align: center;
 }

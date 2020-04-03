@@ -33,27 +33,27 @@
 		<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
 		<div class="navbar">
 			<ul>
+				<li><a href="../logout.php">Logout</a></li>
 				<li><a href="#">Laporan</a></li>
-				<li><a href="#">Kegiatan</a></li>	
-				<li><a href="#dropdown-child" class="mainmenubtn">Petugas</a>
+				<li><a href="#">View</a>
 					<ul>
-						<li><a href="../petugas/petugas1">Petugas 1</a></li>
-						<li><a href="../petugas/petugas1">Petugas 2</a></li>
-						<li><a href="../petugas/petugas1">Petugas 3</a></li>
+						<li><a href="#">Data Buku</a></li>
+						<li><a href="#">Data Siswa</a></li>
+						<li><a href="#">Peminjaman Buku</a></li>
+						<li><a href="#">Pengembalian Buku</a></li>
 					</ul>	
 				</li>
+				<li><a href="#">Kegiatan</a></li>	
 				<li><a href="#">Home</a></li>
 			</ul>
 		</div>
 	</div>
-	<br><br>
 	<div class="body">
-		<a href="daftar_buku.php">Buku</a>
-		<br><br>
-		<a href="../logout.php">LOGOUT</a>
+	
 	</div>
 	<div class="footer">
-
+		<br>
+		<h5>&copy;Copyright 2020</h5>
 	</div>
 
 </body>
