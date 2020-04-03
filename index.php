@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../asset/css/siswa_style.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/siswa_style.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -41,7 +41,7 @@
 </html>
 
 <?php 
-	include_once("../config/config.php");
+	include_once("config/config.php");
 
 		if (isset($_POST['btn_login'])) {
 		$nis = $_POST['nis'];
@@ -60,7 +60,7 @@
 			$db_nis = $dataLogin['nis_siswa'];
 
 			if ($password == $db_password) {
-				header('location:login.php');
+				header('location:siswa/login.php');
 			}
 			else{
 				?>
