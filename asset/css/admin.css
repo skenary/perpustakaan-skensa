@@ -56,17 +56,24 @@
     color:white;
     transition: 0.50s;
 }
+.navbar ul li a:hover{
+    color:blue;
+    display: block;
+}
  
 .navbar ul ul li a:hover {
 	color:blue;
 }
 
 .body{
-    height:350px;
+    height:380px;
     border: 2px solid black;
 }
+.body h1{
+    text-align: center;
+}
 .footer{
-    height:50px;
+    height:55px;
     border:2px solid black;
 }
 .footer h5{

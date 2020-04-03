@@ -43,13 +43,13 @@
 						<li><a href="#">Pengembalian Buku</a></li>
 					</ul>	
 				</li>
-				<li><a href="#">Kegiatan</a></li>	
 				<li><a href="#">Home</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="body">
-	
+		<br><br><br><br><br><br><br><br>
+		<h1>CONTENT</h1>
 	</div>
 	<div class="footer">
 		<br>

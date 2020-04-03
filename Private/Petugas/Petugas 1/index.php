@@ -84,7 +84,7 @@
             </div>
             <div id="imagePreview"></div>
           </div>
-          <input type="submit" class="tes" name="submit">
+          <input type="submit" class="tes" value="Submit" name="submit">
         </div>
       </center>
     </form>
