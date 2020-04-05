@@ -40,8 +40,8 @@
       </div>
     </div>
   </center>
-  <div class="header">
-    <header id="skenary">Skenary</header>
+  <div id="header" class="header">
+    <header id="skenary" class="skenary">Skenary</header>
       <div class="ul-li">
         <a id="addb" class="nowtamp" onclick="balik()"  href="#skenary">Add Book</a>
         <a id="addv" onclick="pindah()" href="#skenary">View Book</a>
@@ -157,3 +157,30 @@
     </center>
   </form>
 </div>
+<style type="text/css">
+  .sticky{
+    position: fixed;
+    top: 0;
+    font-family: myFirstFont;
+    font-size: 25px;
+    width: 100%;
+    height: 60px;
+    background: grey;
+  }
+</style>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.className = "sticky";
+  }else {
+    header.className = "header";
+  }
+}
+</script>

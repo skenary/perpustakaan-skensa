@@ -18,6 +18,7 @@ function fileValidation(){
         }
     }
 }
+
 function pindah() {
   var view_book = document.getElementById("view_book").innerHTML;
   document.getElementById("addb").className = "";
@@ -30,25 +31,18 @@ function balik() {
   document.getElementById("addv").className = "";
   document.getElementById("semuanya").innerHTML = add_book;
 }
-function input(){
-$cek = 0;
-if(isset($_POST['nama_buku'])){
-  if ($_POST['nama_buku'] !== "" ) {
-    $cek=$cek + 1;
-  }
-}
-if(isset($_POST['tipe_buku'])){
-  if ($_POST['tipe_buku'] !== "" ) {
-    $cek=$cek + 1;
-  }
-}
-if(isset($_POST['kode_buku'])){
-  if ($_POST['kode_buku'] !== "" ) {
-    $cek=$cek + 1;
-  }
-} 
-if ($cek == 3) {
-  document.getElementById('file').disabled = false;
-}
 
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.className = "sticky";
+  }else {
+    header.className = "header";
+  }
 }
