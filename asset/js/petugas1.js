@@ -1,4 +1,3 @@
-
 function fileValidation(){
     var fileInput = document.getElementById('file');
     var filePath = fileInput.value;

@@ -128,7 +128,7 @@
         <div class="flex">
           <div class="box2">
             <p>Fill The Box</p>
-            <div class="form" onclick="myFunction()">
+            <div class="form" onscroll="myFunction()">
               <input type="text" name="nama_buku" required="" autocomplete="off">
               <label for="name" class="label-name">
                   <span class="content-name">Book Name</span>
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="apakek">
-            <input type="file" id="file" name="gambar" disabled="disabled" onchange="return fileValidation()">
+            <input type="file" id="file" name="gambar" onchange="return fileValidation()">
           </div>
           <div id="imagePreview"></div>
         </div>
@@ -157,30 +157,4 @@
     </center>
   </form>
 </div>
-<style type="text/css">
-  .sticky{
-    position: fixed;
-    top: 0;
-    font-family: myFirstFont;
-    font-size: 25px;
-    width: 100%;
-    height: 60px;
-    background: grey;
-  }
-</style>
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("header");
-
-
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.className = "sticky";
-  }else {
-    header.className = "header";
-  }
-}
-</script>
+<script src="../../../asset/js/petugas1.js"></script>
