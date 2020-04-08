@@ -58,7 +58,7 @@
           <div class="flex">
             <div class="box2">
               <p>Fill The Box</p>
-              <div class="form">
+              <div class="form" onscroll="myFunction()">
                 <input type="text" name="nama_buku" required="" autocomplete="off">
                 <label for="name" class="label-name">
                     <span class="content-name">Book Name</span>
@@ -76,9 +76,7 @@
                     <span class="content-name3">Book Code</span>
                 </label>
               </div>
-                
             </div>
-
             <div class="apakek">
               <input type="file" id="file" name="gambar" onchange="return fileValidation()" required="">
             </div>
@@ -148,11 +146,11 @@
             </div>
           </div>
           <div class="apakek">
-            <input type="file" id="file" name="gambar" onchange="return fileValidation()">
+            <input type="file" id="file" name="gambar" onchange="return fileValidation()" required="">
           </div>
           <div id="imagePreview"></div>
         </div>
-        <input type="submit" class="tes" name="submit">
+        <input type="submit" class="tes" value="Submit" name="submit">
       </div>
     </center>
   </form>
