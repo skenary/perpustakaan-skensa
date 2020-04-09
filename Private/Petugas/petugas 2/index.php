@@ -7,10 +7,16 @@
 	<link rel="stylesheet" href="../../../asset/css/petugas2(1).css">
 </head>
 <body>
-	<div class="bg"></div>
-	<div class="opening">
-		<h1>Hai Petugas 2!</h1>
-		<h5>Welcome back to Skenary</h5>
+	<div class="bg">
+	<table width="100%" height="100%"  class="opening">
+		<tr>
+			<td >
+				<h1>Hai Petugas 2!</h1>
+				<h5>Welcome back to Skenary</h5>
+			</td>
+		</tr>
+	</table>
+
 	</div>
 	<!-- header -->
 	<div class="header">
@@ -21,7 +27,7 @@
 				</td>
 				<td width="50%"></td>
 				<td width="12.5%">
-				<a href="#" class="active">Book Borrowed</a>
+				<a href="petugas2(2).php" class="active">Book Borrowed</a>
 				</td>
 				<td width="12.5%">
 				<a href="#" class="nav">Book Borrow</a>
@@ -44,5 +50,10 @@
 			<button type="submit">Enter</button>
 		</form>
 	</div>
+	<table>
+		<tr>
+			<td class="space"></td>
+		</tr>
+	</table>
 </body>
 </html>
