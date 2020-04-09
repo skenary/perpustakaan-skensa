@@ -40,8 +40,8 @@
       </div>
     </div>
   </center>
-  <div class="header">
-    <header id="skenary">Skenary</header>
+  <div id="header" class="header">
+    <header id="skenary" class="skenary">Skenary</header>
       <div class="ul-li">
         <a id="addb" class="nowtamp" onclick="balik()"  href="#skenary">Add Book</a>
         <a id="addv" onclick="pindah()" href="#skenary">View Book</a>
@@ -58,7 +58,7 @@
           <div class="flex">
             <div class="box2">
               <p>Fill The Box</p>
-              <div class="form">
+              <div class="form" onscroll="myFunction()">
                 <input type="text" name="nama_buku" required="" autocomplete="off">
                 <label for="name" class="label-name">
                     <span class="content-name">Book Name</span>
@@ -76,15 +76,13 @@
                     <span class="content-name3">Book Code</span>
                 </label>
               </div>
-                
             </div>
-
             <div class="apakek">
-              <input type="file" id="file" name="gambar" onchange="return fileValidation()">
+              <input type="file" id="file" name="gambar" onchange="return fileValidation()" required="">
             </div>
             <div id="imagePreview"></div>
           </div>
-          <input type="submit" class="tes" name="submit">
+          <input type="submit" class="tes" value="Submit" name="submit">
         </div>
       </center>
     </form>
@@ -128,7 +126,7 @@
         <div class="flex">
           <div class="box2">
             <p>Fill The Box</p>
-            <div class="form" onclick="myFunction()">
+            <div class="form" onscroll="myFunction()">
               <input type="text" name="nama_buku" required="" autocomplete="off">
               <label for="name" class="label-name">
                   <span class="content-name">Book Name</span>
@@ -148,12 +146,13 @@
             </div>
           </div>
           <div class="apakek">
-            <input type="file" id="file" name="gambar" disabled="disabled" onchange="return fileValidation()">
+            <input type="file" id="file" name="gambar" onchange="return fileValidation()" required="">
           </div>
           <div id="imagePreview"></div>
         </div>
-        <input type="submit" class="tes" name="submit">
+        <input type="submit" class="tes" value="Submit" name="submit">
       </div>
     </center>
   </form>
 </div>
+<script src="../../../asset/js/petugas1.js"></script>
