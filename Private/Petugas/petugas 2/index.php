@@ -6,7 +6,7 @@
 	<title>Petugas 2</title>
 	<link rel="stylesheet" href="../../../asset/css/petugas2(1).css">
 </head>
-<?php 
+<?php
 
 		if(isset($_GET['pesan'])){
 			if($_GET['pesan']=="error"){
@@ -16,7 +16,7 @@
 		}
 
 		session_start();
-	 
+
 		if($_SESSION['level']==""){
 			header("location:../index.php?pesan=error");
 		} else if($_SESSION['level']=="petugas1"){
@@ -24,15 +24,28 @@
 		} else if($_SESSION['level']=="petugas3"){
 			header("location:../petugas 3/index.php?pesan=error");
 		}
- 
+
 	?>
 
 <body>
+<<<<<<< HEAD
 	<div class="bg"></div>
 	<div class="opening">
 		<img src=" ../../../asset/img/logo.png" class="logoskenary">
 		<h1>Hai Petugas <?php echo $_SESSION['datanama']; ?>!</h1>
 		<h5>Welcome back to Skenary</h5>
+=======
+	<div class="bg">
+	<table width="100%" height="100%"  class="opening">
+		<tr>
+			<td >
+				<h1>Hai <?php echo $_SESSION['datanama']; ?>!</h1>
+				<h5>Welcome back to Skenary</h5>
+			</td>
+		</tr>
+	</table>
+
+>>>>>>> 627485132b4dfb52e169c23b01072a149bcb1514
 	</div>
 	<!-- header -->
 	<div class="header">
@@ -43,7 +56,7 @@
 				</td>
 				<td width="50%"></td>
 				<td width="12.5%">
-				<a href="#" class="active">Book Borrowed</a>
+				<a href="petugas2(2).php" class="active">Book Borrowed</a>
 				</td>
 				<td width="12.5%">
 				<a href="#" class="nav">Book Borrow</a>
@@ -68,5 +81,10 @@
 			<button type="submit">Enter</button>
 		</form>
 	</div>
+	<table>
+		<tr>
+			<td class="space"></td>
+		</tr>
+	</table>
 </body>
 </html>

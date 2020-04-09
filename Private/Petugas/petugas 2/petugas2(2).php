@@ -19,7 +19,7 @@
           <a href="#" class="nav">Book Borrowed</a>
         </td>
         <td width="12.5%">
-          <a href="#" class="active">Book Borrow</a>
+          <a href="index.php" class="active">Book Borrow</a>
         </td>
         <td>
           <img src="../../../asset/img/menunav.jpg" class="menunav" alt="">

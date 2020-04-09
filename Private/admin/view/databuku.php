@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halaman Admin</title>
-	<link rel="stylesheet" type="text/css" href="../../asset/css/admin.css">
+	<title>Halaman Data Buku</title>
+	<link rel="stylesheet" type="text/css" href="../../../asset/css/admin.css">
 </head>
 <body>
 	<?php 
@@ -33,22 +33,35 @@
 		<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
 		<div class="navbar">
 			<ul>
-				<li><a href="../logout.php">Logout</a></li>
+				<li><a href="../../logout.php">Logout</a></li>
 				<li><a href="#">Laporan</a></li>
 				<li><a href="#">View</a>
 					<ul>
-						<li><a href="view/databuku.php">Data Buku</a></li>
-						<li><a href="view/datasiswa.php">Data Siswa</a></li>
-						<li><a href="view/peminjaman-buku.php">Peminjaman Buku</a></li>
-						<li><a href="view/pengembalian-buku">Pengembalian Buku</a></li>
+						<li><a href="databuku.php">Data Buku</a></li>
+						<li><a href="datasiswa.php">Data Siswa</a></li>
+						<li><a href="peminjaman-buku.php">Peminjaman Buku</a></li>
+						<li><a href="pengembalian-buku.php">Pengembalian Buku</a></li>
 					</ul>	
 				</li>
-				<li><a href="index.php">Home</a></li>
+				<li><a href="../index.php">Home</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="body">			
-			<h1>WEBSITE PERPUSTAKAAN SKENSA</h1>
+	<div class="body">	
+			<h2>Data Buku</h2>
+			<center>
+				<table border="1" callpadding="5" cellspasing="2">
+					<tr>
+						<td>No</td>
+						<td>Nama Buku</td>
+						<td>Tipe Buku</td>
+						<td>Kode Buku</td>
+						<td>Gambar</td>
+						<td>Aksi</td>
+					</tr>
+				</table>
+			</center>
+		</div>
 	</div>
 	<div class="footer">
 		<br>
