@@ -30,6 +30,7 @@
 <body>
 	<div class="bg"></div>
 	<div class="opening">
+		<img src=" ../../../asset/img/logo.png" class="logo">
 		<h1>Hai Petugas <?php echo $_SESSION['datanama']; ?>!</h1>
 		<h5>Welcome back to Skenary</h5>
 	</div>

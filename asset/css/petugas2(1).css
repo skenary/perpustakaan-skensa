@@ -38,7 +38,7 @@ body{
     background-color: #E8E8E8;
     width: 100%;
     position: relative;
-    margin-top:-148px;
+    margin-top:-352px;
 }
 .tbheader{
     text-align: center;
@@ -90,6 +90,7 @@ input{
     border: 1px solid #ccc;
     box-sizing: border-box;
     text-align: center;
+    background-color: whitesmoke;
 }
 button{
     width: 12%;
