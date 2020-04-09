@@ -20,7 +20,7 @@
 									<form action="" method="post">
 										<ul>
 											<li>
-												<input type="text" name="nis" placeholder="Nomor Induk Siswa" required="required" autocomplete="">
+												<input type="text" name="nis" placeholder="Nomor Induk Siswa" required="required" autocomplete="off">
 											</li>
 										</ul>
 										<button class="btnab" type="submit" name="btn_login" >Absen</button>
