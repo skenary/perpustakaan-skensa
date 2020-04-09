@@ -32,7 +32,9 @@
 <body>
     <div class="head">
         <br>
+        <a href="../../logout.php" onclick="return confirm('Anda Yakin Ingin Keluar?')"> >
             <i class="fa fa-bars" style="float:right; font-size:30px; color:white;"></i>
+        </a>
         <br>
         <div class="text">
             <h1>Hai Petugas <?php echo  $_SESSION['datanama'] ?>!</h1>

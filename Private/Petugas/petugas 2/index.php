@@ -6,12 +6,33 @@
 	<title>Petugas 2</title>
 	<link rel="stylesheet" href="../../../asset/css/petugas2(1).css">
 </head>
+<?php
+
+		if(isset($_GET['pesan'])){
+			if($_GET['pesan']=="error"){
+  			$pesan = "Anda tidak memiliki hak akses !";
+  			echo "<script type='text/javascript'>alert('$pesan');</script>";
+			}
+		}
+
+		session_start();
+
+		if($_SESSION['level']==""){
+			header("location:../index.php?pesan=error");
+		} else if($_SESSION['level']=="petugas1"){
+			header("location:../petugas 1/index.php?pesan=error");
+		} else if($_SESSION['level']=="petugas3"){
+			header("location:../petugas 3/index.php?pesan=error");
+		}
+
+	?>
+
 <body>
 	<div class="bg">
 	<table width="100%" height="100%"  class="opening">
 		<tr>
 			<td >
-				<h1>Hai Petugas 2!</h1>
+				<h1>Hai <?php echo $_SESSION['datanama']; ?>!</h1>
 				<h5>Welcome back to Skenary</h5>
 			</td>
 		</tr>
@@ -33,7 +54,9 @@
 				<a href="#" class="nav">Book Borrow</a>
 				</td>
 				<td>
-				<img src="../../../asset/img/menunav.jpg" class="menunav" alt="">
+				<a href="../../logout.php" onclick="return confirm('Anda Yakin Ingin Keluar?')">
+					<img src="../../../asset/img/menunav.jpg" class="menunav" alt="">
+				</a>
 				</td>
 			</tr>
 		</table>
