@@ -28,24 +28,11 @@
 	?>
 
 <body>
-<<<<<<< HEAD
 	<div class="bg"></div>
 	<div class="opening">
-		<img src=" ../../../asset/img/logo.png" class="logoskenary">
+		<img src=" ../../../asset/img/logo2.png">
 		<h1>Hai Petugas <?php echo $_SESSION['datanama']; ?>!</h1>
 		<h5>Welcome back to Skenary</h5>
-=======
-	<div class="bg">
-	<table width="100%" height="100%"  class="opening">
-		<tr>
-			<td >
-				<h1>Hai <?php echo $_SESSION['datanama']; ?>!</h1>
-				<h5>Welcome back to Skenary</h5>
-			</td>
-		</tr>
-	</table>
-
->>>>>>> 627485132b4dfb52e169c23b01072a149bcb1514
 	</div>
 	<!-- header -->
 	<div class="header">
