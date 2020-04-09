@@ -27,6 +27,9 @@ body{
     top: -370px;
     color: #fff;
 }
+.logoskenary{
+    margin-top: -120px;
+}
 .opening h1{
     font-size: 40pt;
 }
@@ -38,7 +41,7 @@ body{
     background-color: #E8E8E8;
     width: 100%;
     position: relative;
-    margin-top:-352px;
+    margin-top:-232px;
 }
 .tbheader{
     text-align: center;
