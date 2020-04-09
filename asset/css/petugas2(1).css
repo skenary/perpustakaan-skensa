@@ -6,7 +6,7 @@
     font-family: b;
     src: url(../hoeflertext.ttf);
  }
- 
+
  * {
     font-family: b;
  }
@@ -22,9 +22,8 @@ body{
     background-repeat:no-repeat;
 }
 .opening{
-    position: relative;
     text-align: center;
-    top: -370px;
+    top: 0px;
     color: #fff;
 }
 .opening h1{
@@ -37,8 +36,7 @@ body{
 .header{
     background-color: #E8E8E8;
     width: 100%;
-    position: relative;
-    margin-top:-148px;
+    position: sticky;
 }
 .tbheader{
     text-align: center;
@@ -74,9 +72,9 @@ body{
     text-align: center;
     padding: 40px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 150px;
     margin-bottom: 80px;
-    width: 60%; 
+    width: 60%;
 }
 .box p{
     float: right;
@@ -98,4 +96,13 @@ button{
     border: none;
     background-color: black;
     color: white;
+    transition: 0.6s ease;
+}
+button:hover{
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.space{
+  height:22vh;
 }

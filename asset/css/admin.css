@@ -1,3 +1,4 @@
+/*------------------------------------------Halaman index----------------*/
 *{
     margin:0;
     padding:0;
@@ -41,7 +42,7 @@
     position:absolute;
     background-color: black;
     margin-top:10px;
-    left:720px; 
+    margin-left:-80px; 
     height:150px;
 	width:220px;
 }
@@ -71,6 +72,7 @@
 }
 .body h1{
     text-align: center;
+    margin-top: 150px;
 }
 .footer{
     height:55px;
@@ -78,4 +80,46 @@
 }
 .footer h5{
     text-align: center;
+}
+/*------------------------------------------Halaman data buku----------------*/
+.body table{
+    width:80%;
+    text-align:center;
+}
+.body h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+/*------------------------------------------Halaman data siswa----------------*/
+.body table{
+    width:80%;
+    text-align:center;
+}
+.body h3{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+/*------------------------------------------Halaman peminjaman buku----------------*/
+.body table{
+    width:80%;
+    text-align:center;
+}
+.body h4{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+/*------------------------------------------Halaman pengembalian buku----------------*/
+.body table{
+    width:80%;
+    text-align:center;
+}
+.body h5{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
 }
