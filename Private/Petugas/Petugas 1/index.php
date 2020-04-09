@@ -33,7 +33,7 @@
     <div class="img">
       <div class="fa"><a href="../../logout.php"><i class="fas fa-sign-out-alt fa-3x"></i></a></div>
       <div class="text">
-        <img src=" ../../../asset/img/logo.png">
+        <img src=" ../../../asset/img/logo2.png">
         <h1>Hai Petugas <?php echo  $_SESSION['datanama'] ?>!</h1>
         <br>
         <p>Welcome Back To Skenary</p>
