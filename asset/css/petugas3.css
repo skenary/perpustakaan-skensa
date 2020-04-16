@@ -11,13 +11,13 @@
     .text{
         text-align:center;
         font-size:30px;
-        margin-top:210px;
+        margin-top:-10px;
         color:white;
     }
 
     .text1{
         text-align:center;
-        margin-bottom:80px;
+        margin-top: 5px;
         font-size:20px;
         color:white;
     }
@@ -44,9 +44,17 @@
     .head{
         background-image: url('../img/gambar1.jpg');
         height:100vh;
+        text-align: center;
         background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
+    }
+    .head img{
+        margin-left: 40px;
+        margin-top: 120px;
+        width: 200px;
+        height: 200px;
+        position: relative;
     }
 
     @font-face{

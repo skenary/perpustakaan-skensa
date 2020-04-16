@@ -14,6 +14,7 @@
         <br>
             <i class="fa fa-bars" style="float:right; font-size:30px; color:white;"></i>
         <br>
+        <img src=" ../../../asset/img/logo2.png">
         <div class="text">
             <h1>Hai Petugas 3</h1>
         </div>
