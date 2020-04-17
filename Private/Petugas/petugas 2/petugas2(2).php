@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Book Borrowed</title>
-  <link rel="stylesheet" href="../../../asset/css/petugas2(2).css">
+  <link rel="stylesheet" href="../../../asset/css/petugas2(1).css">
 </head>
 
 <body>
