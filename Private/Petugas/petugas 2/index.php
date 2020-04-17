@@ -50,7 +50,7 @@
 				</td>
 				<td>
 				<a href="../../logout.php" onclick="return confirm('Anda Yakin Ingin Keluar?')">
-					<img src="../../../asset/img/menunav.jpg" class="menunav" alt="">
+					<img src="../../../asset/img/logout.png" class="menunav" alt="">
 				</a>
 				</td>
 			</tr>

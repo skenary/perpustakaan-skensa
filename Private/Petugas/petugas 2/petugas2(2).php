@@ -22,7 +22,7 @@
           <a href="index.php" class="active">Book Borrow</a>
         </td>
         <td>
-          <img src="../../../asset/img/menunav.jpg" class="menunav" alt="">
+          <img src="../../../asset/img/logout.png" class="menunav" alt="">
         </td>
       </tr>
     </table>
