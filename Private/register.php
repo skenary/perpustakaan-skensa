@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Register</title>
   <link rel="stylesheet" href="../asset/css/index.css">
 </head>
 <body>
@@ -27,16 +27,16 @@
  
 	<center>
     <div class="img">
-    	<form action="../config/cek_login.php" method="post">
+    	<form action="../config/cek_register.php" method="post">
 	    <div class="box1">
 	      <center>
-	        <h1>Login</h1>
+	        <h1>Register</h1>
 	      </center>
 	      <div class="box2">
-	        <div class="form">
+	        <div class="form1">
 	          <input type="text" id="username" name="username" required="" autocomplete="off">
 	          <label for="name" class="label-name">
-	              <span class="content-name">Username</span>
+	              <span class="content-name" style="margin-top: -20px;">Username</span>
 	          </label>
 	        </div>
 
@@ -46,8 +46,20 @@
 	              <span class="content-name2">Password</span>
 	          </label>
 	        </div>
-	        <input type="submit" onclick="nama()" name="submit" class="login" value="Login">
-	        <p class="register">Belum punya akun ? <a href="register.php">Register</a></p>
+
+			<br>
+
+	        <div class="form3">
+	          <label for="name" class="label-name3">
+	            <span class="content-name3">Level</span>
+	          </label>
+	          <select name="level" class="level" required="">
+		        <option value="petugas1">Petugas 1</option>
+		        <option value="petugas2">Petugas 2</option>
+		        <option value="petugas3">Petugas 3</option>
+		      </select>
+	        </div>
+	        <input type="submit" onclick="nama()" name="submit" class="login" value="Register">
         </div>
 	    </div>
 	</form>
