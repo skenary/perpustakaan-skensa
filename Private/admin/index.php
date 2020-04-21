@@ -29,8 +29,10 @@
 	?>
 	
 	<div class="head">
-		<h1>Skenary</h1>
-		<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+		<div class="logo">
+			<h1>Skenary</h1>
+			<p >Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+		</div>
 		<div class="navbar">
 			<ul>
 				<li><a href="../logout.php">Logout</a></li>

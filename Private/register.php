@@ -33,7 +33,7 @@
 	        <h1>Register</h1>
 	      </center>
 	      <div class="box2">
-	        <div class="form1">
+	        <div class="form">
 	          <input type="text" id="username" name="username" required="" autocomplete="off">
 	          <label for="name" class="label-name">
 	              <span class="content-name" style="margin-top: -20px;">Username</span>
