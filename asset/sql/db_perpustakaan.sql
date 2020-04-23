@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2020 at 02:27 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Apr 23, 2020 at 03:48 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -66,6 +64,7 @@ CREATE TABLE `tb_siswa` (
 CREATE TABLE `tb_user` (
   `id` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   `level` varchar(20) NOT NULL
@@ -75,11 +74,12 @@ CREATE TABLE `tb_user` (
 -- Dumping data for table `tb_user`
 --
 
-INSERT INTO `tb_user` (`id`, `nama`, `username`, `password`, `level`) VALUES
-(1, 'Winka', 'winka', 'winka', 'admin'),
-(2, 'Ary', 'ary', 'ary', 'petugas1'),
-(15, 'asd', 'asd', 'asd', 'petugas2'),
-(16, 'das', 'das', 'das', 'petugas3');
+INSERT INTO `tb_user` (`id`, `nama`, `email`, `username`, `password`, `level`) VALUES
+(1, 'Winka', '', 'winka', 'winka', 'admin'),
+(2, 'Ary', '', 'ary', 'ary', 'petugas1'),
+(15, 'asd', '', 'asd', 'asd', 'petugas2'),
+(16, 'das', '', 'das', 'das', 'petugas3'),
+(19, '', 'tes1', 'tes1', 'tes1', 'petugas1');
 
 --
 -- Indexes for dumped tables
@@ -112,20 +112,16 @@ ALTER TABLE `tb_user`
 --
 ALTER TABLE `tb_buku`
   MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
 --
 -- AUTO_INCREMENT for table `tb_siswa`
 --
 ALTER TABLE `tb_siswa`
   MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-COMMIT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
