@@ -46,6 +46,9 @@
 	              <span class="content-name2">Password</span>
 	          </label>
 	        </div>
+	        <div class="lupapswd">
+	        	<a href="#">Lupa Password?</a>
+	        </div>	
 	        <input type="submit" onclick="nama()" name="submit" class="login" value="Login">
 	        <p class="register">Belum punya akun ? <a href="register.php">Register</a></p>
         </div>

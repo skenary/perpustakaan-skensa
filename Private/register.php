@@ -33,6 +33,14 @@
 	        <h1>Register</h1>
 	      </center>
 	      <div class="box2">
+
+	      	<div class="form0">
+	          <input type="text" id="email" name="email" required="" autocomplete="off">
+	          <label for="name" class="label-name0">
+	              <span class="content-name0">Email</span>
+	          </label>
+	        </div>
+
 	        <div class="form1">
 	          <input type="text" id="username" name="username" required="" autocomplete="off">
 	          <label for="name" class="label-name">
