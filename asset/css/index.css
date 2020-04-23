@@ -8,7 +8,7 @@ body{
 .box1{
   margin-top: 13%;
   width: 27%;
-  height: 350px;
+  height: 370px;
   border-radius: 20px;
 	background-color: white;
 }
@@ -30,7 +30,7 @@ body{
   src : url(../font/hoeflertext.ttf);
 }
 .login{
-  margin-top: 35px;
+  margin-top: 5px;
   background-color: black;
   color: white;
   width: 65px;
@@ -200,6 +200,11 @@ body{
 .form3 label{
   font-size: 24px;
   margin-right: 10px;
+}
+.forpass{
+  text-decoration: none;
+  color: black;
+  margin-top: 15px;
 }
 .register {
   margin-top: 15px;

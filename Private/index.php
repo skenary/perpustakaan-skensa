@@ -45,7 +45,8 @@
 	          <label for="name" class="label-name2">
 	              <span class="content-name2">Password</span>
 	          </label>
-	        </div>
+			</div>
+			<p class="forpass"><a href="">Lupa Password ?</a></p>
 	        <input type="submit" onclick="nama()" name="submit" class="login" value="Login">
 	        <p class="register">Belum punya akun ? <a href="register.php">Register</a></p>
         </div>
