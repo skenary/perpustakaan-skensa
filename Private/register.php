@@ -41,7 +41,7 @@
 	          </label>
 	        </div>
 
-	        <div class="form1">
+	        <div class="form">
 	          <input type="text" id="username" name="username" required="" autocomplete="off">
 	          <label for="name" class="label-name">
 	              <span class="content-name" style="margin-top: -20px;">Username</span>

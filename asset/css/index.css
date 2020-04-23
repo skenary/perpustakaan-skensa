@@ -8,7 +8,7 @@ body{
 .box1{
   margin-top: 13%;
   width: 27%;
-  height: 380px;
+  height: 390px;
   border-radius: 20px;
 	background-color: white;
 }
@@ -255,6 +255,11 @@ body{
 .form3 label{
   font-size: 24px;
   margin-right: 10px;
+}
+.forpass{
+  text-decoration: none;
+  color: black;
+  margin-top: 15px;
 }
 .register {
   margin-top: 15px;
