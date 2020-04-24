@@ -48,7 +48,7 @@
 
 	        </div>
 	        <div class="lupapswd">
-	        	<a href="#">Lupa Password?</a>
+	        	<a href="forpass.php">Lupa Password?</a>
 	        </div>	
 
 	        <input type="submit" onclick="nama()" name="submit" class="login" value="Login">
