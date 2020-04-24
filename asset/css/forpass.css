@@ -1,0 +1,207 @@
+* { 
+    padding-top: 0;
+    margin-top: 0px;
+  }        
+  body{
+    background-image: url('../img/gambar1.jpg');
+  }
+  .box1{
+    margin-top: 13%;
+    width: 27%;
+    height: 355px;
+    border-radius: 20px;
+      background-color: white;
+  }
+  .box1 h1{
+    font-family: hoeflertext;
+    padding-top: 25px;
+    font-size: 40px;
+    color: black;
+  }
+  .box1 p{
+    font-family: hoeflertext;
+    margin-top: -20px;
+    color: black;
+  }
+  .box2{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    padding: 25px;
+    width: 250px;
+    height: 160px;
+  }
+  @font-face{
+    font-family:hoeflertext;
+    src : url(../font/hoeflertext.ttf);
+  }
+  .login{
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    width: 65px;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+  }
+  .form0{
+    font-size: 25px;
+    padding-top: -20px;
+    width: 70%;
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+  }
+  .form0 input{
+    font-size: 15px;
+    padding-left: 5px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+  }
+  .form0 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+  }
+  .form0 label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid black;
+    transform: translate(-100%);
+    transition: transform 0.3s ease;
+  }
+  .content-email0{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+  }
+  .form0 input:focus + .label-email0 .content-email0, 
+  .form0 input:valid + .label-email0 .content-email0{
+    transform: translateY(-90%);
+    font-size: 14px;
+    color: black;
+  }
+  .form0 input:focus +.label-email0::after, 
+  .form0 input:valid + .label-email0:after{
+    transform: translateX(0%);
+  }     
+  .form{
+    font-size: 25px;
+    margin-top: 15px;
+    padding-top: 25px;
+    width: 70%;
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+  }
+  
+  .form input{
+    font-size: 15px;
+    padding-left: 5px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+  }
+  .form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+  }
+  .form label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid black;
+    transform: translate(-100%);
+    transition: transform 0.3s ease;
+  }
+  .content-email{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+  }
+  .form input:focus + .label-email .content-email, 
+  .form input:valid + .label-email .content-email{
+    transform: translateY(-90%);
+    font-size: 14px;
+    color: black;
+  }
+  .form input:focus +.label-email::after, 
+  .form input:valid + .label-email:after{
+    transform: translateX(0%);
+  }
+  .form1{
+    font-size: 25px;
+    padding-top: 20px;
+    width: 70%;
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+  }
+  .form1 input{
+    font-size: 15px;
+    padding-left: 5px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+  }
+  .form1 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+  }
+  .form1 label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid black;
+    transform: translate(-100%);
+    transition: transform 0.3s ease;
+  }
+  .form1 input:focus + .label-email .content-email, 
+  .form1 input:valid + .label-email .content-email{
+    transform: translateY(-90%);
+    font-size: 14px;
+    color: black;
+  }
+  .form1 input:focus +.label-email::after, 
+  .form1 input:valid + .label-email:after{
+    transform: translateX(0%);
+  }
+  

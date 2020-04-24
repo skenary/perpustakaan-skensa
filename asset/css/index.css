@@ -101,6 +101,7 @@ body{
   height: 35px;
   overflow: hidden;
 }
+
 .form input{
   font-size: 15px;
   padding-left: 5px;
@@ -256,11 +257,6 @@ body{
   font-size: 24px;
   margin-right: 10px;
 }
-.forpass{
-  text-decoration: none;
-  color: black;
-  margin-top: 15px;
-}
 .register {
   margin-top: 15px;
 }
@@ -272,7 +268,6 @@ body{
 }
 .lupapswd{
   margin-top: 10px;
-  margin-left: 85px;
 }
 .lupapswd a:hover{
   color: #000000;
